@@ -23,3 +23,4 @@ groq
 mcp
 google-genai
 pydantic
+tavily-python
