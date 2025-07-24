@@ -22,7 +22,7 @@ def setup_agents():
         role="Search the web for information",
         model=Gemini(id="gemini-2.0-flash"),
         tools=[TavilyTools()],
-        instructions="Always include the sources",
+        instructions="Always include the sources. Provide detailed analysis.",
         show_tool_calls=True,
         markdown=True,
     )
@@ -36,7 +36,7 @@ def setup_agents():
             analyst_recommendations=True,
             stock_fundamentals=True
         )],
-        instructions="Use tables to display data",
+        instructions="Provide detailed analysis. Use tables to display data",
         show_tool_calls=True,
         markdown=True,
     )
